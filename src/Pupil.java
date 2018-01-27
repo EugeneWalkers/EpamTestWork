@@ -6,12 +6,20 @@ public class Pupil {
     private String name;
     private String surname;
     private GregorianCalendar dateOfBirth;
-    TreeSet<Element> elements = new TreeSet<>();
+    private TreeSet<Element> elements = new TreeSet<>();
+    private int numberOfReadBooks;
 
-    public Pupil(String surname, String name, GregorianCalendar dateOfBirth){
+    public Pupil(String surname, String name, GregorianCalendar dateOfBirth) {
         this.name = name;
         this.surname = surname;
         this.dateOfBirth = dateOfBirth;
+        numberOfReadBooks = 0;
+    }
+
+    public void addReadElement(Element element) {
+        if (element.getClass().toString().equals("class Book") && elements.add(element)) {
+            numberOfReadBooks++;
+        }
     }
 
     public String getName() {
@@ -40,7 +48,12 @@ public class Pupil {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String toString(){
-        return name + " " + surname + "(" + dateOfBirth.get(Calendar.DATE)+"." + dateOfBirth.get(Calendar.MONTH) + "." + dateOfBirth.get(Calendar.YEAR) + ")";
+    public String toString() {
+        return surname + " " + name + " " + dateOfBirth.get(Calendar.DATE) + "." + dateOfBirth.get(Calendar.MONTH) + "." + dateOfBirth.get(Calendar.YEAR);
     }
+
+    public int getNumberOfReadBooks() {
+        return numberOfReadBooks;
+    }
+
 }

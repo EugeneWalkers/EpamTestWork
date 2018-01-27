@@ -1,2 +1,6 @@
-Book J.K.Rowling Harry Potter
-Article J.C.Programmer How to programming
+Book J.K.Rowling Harry Potter and the Philosopher's stone
+Article J.C.Programmer Analyzing Java Core
+Book J.K.Rowling Harry Potter and the prisoner of Azkaban
+Book J.K.Rowling Harry Potter and the Secret Chamber
+Newspaper Unknowner Trust
+Journal T.B.Admin How to administrate
