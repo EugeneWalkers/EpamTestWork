@@ -142,7 +142,7 @@ public class Library {
         });
         for (int i = 0; i < pupils.size(); i++) {
             int temp = pupils.get(i).getNumberOfReadBooks();
-            if (temp > lowD && temp <= highD) {
+            if (temp >= lowD && temp <= highD) {
                 answer.append(pupils.get(i).toString() + ": " + temp + "\n");
             }
         }

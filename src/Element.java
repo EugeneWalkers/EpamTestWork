@@ -11,16 +11,8 @@ public abstract class Element implements Comparable<Element> {
         return autor;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String toString() {
@@ -35,7 +27,4 @@ public abstract class Element implements Comparable<Element> {
         }
     }
 
-    public boolean equals(Element e){
-        return e.getAutor().equals(autor) && e.getName().equals(name);
-    }
 }
